@@ -1,4 +1,4 @@
-/* Munchkin CSS Started March 2023 Kirk Mitchell */
+/* Unit Converter Started March 2023 Kirk Mitchell */
 
 *{
 transition-duration: 250ms;}
@@ -18,11 +18,17 @@ height: 100vh;
 body {
 margin: 0;
 padding: 0;
-background-color:#f3d2c1;
-color:#001858;
-text-shadow:2.5px 2.5px 1px #f582ae;
+background-color:lightgrey;
+color:white;
+font-family:'Montserrat', sans-serif;
 }
 
+#top-spacer{
+margin-bottom:-250px;
+display:flex;
+background-color:#6843ff;
+width:100%;
+height:300px;}
 
 .main-title{
 color:#001858;
@@ -48,38 +54,68 @@ text-align: center;}
 
 
 .h1 {
-font-family: 'neoclassical', serif;
+margin-top:-20px;
+margin-bottom:0px;
+font-weight:500;
 margin-right:30px;
 font-size:2em;
 margin-left:30px;
+
 }
 
 .p-normal {
-font-family: 'neoclassical', serif;
-font-size:1.5em;
-margin-left:100px;
-margin-right:100px;
+    font-weight:300;
+font-size:1.2em;
+margin-left:10px;
+margin-right:10px;
 }
 
 .p-sm{
-font-family:'Montserrat', sans-serif;
+
 font-size:.8em;
 font-weight: 300;}
 
-/* Spacers */
-#top-spacer{
-margin-top:30px;}
+input{
+font-family:inherit;
+font-weight:500;
+margin-top:20px;
+height:75px;
+width:75px;
+background-color:inherit;
+border:1px solid white;
+color:white;
+font-size:2em;
+padding:5px;
+text-align: center;
+justify-content: center;
+align-items: center;
+border-radius:20px
+}
 
+#converter-box{
+z-index:-1;
+display:flex;
+background-color:white;
+color:#6843ff;
+margin-left:auto;
+margin-right:auto;
+width:600px;
+height:150px;
+margin-top:55px;
+margin-bottom:-30px;
+border-radius:20px;}
 
+.convh1{font-size:1.5em;
+margin-bottom:-10px;}
 /* Buttons */
 
 .button{
 justify-content: center;
-width:250px;
-color:#F4E4BA;
-background-color:#4A7C59;
-text-shadow:2px 2px 1px #D77A61;
-font-family: 'neoclassical', serif;
+width:200px;
+color:#6843ff;
+background-color:white;
+text-shadow:1px 1px 1px gray;
+font-family:inherit;
 font-size:2em;
 padding:5px 10px;
 border:none;
@@ -87,19 +123,20 @@ margin-left:15px;
 margin-right:15px;
 border-radius:15px;
 letter-spacing: .5px;
-border-bottom:4px solid #D77A61;
-border-right:4px solid #D77A61;
-margin-bottom:20px;
+border-bottom:4px solid gray;
+border-right:4px solid gray;
+margin-bottom:10px;
+margin-top:20px;
 display: flex;
 
 }
 
 .button:hover{
-background-color:#D77A61;
-color:#565676;
-text-shadow:2px 2px 1px #BBBDF6;
-border-bottom:4px solid #4A7C59;
-border-right:4px solid #4A7C59;
+background-color:#6843ff;
+color:white;
+text-shadow:2px 2px 1px gray;
+border-bottom:4px solid gray;
+border-right:4px solid gray;
 font-size:2.1em;
 }
 
